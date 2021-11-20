@@ -15,7 +15,7 @@
             remove: remove
         };
 
-        var URL = 'http://localhost:8080/api/paises';
+        var URL = 'http://localhost:8080/api/pais';
 
         return service;
 
