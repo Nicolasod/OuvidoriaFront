@@ -3,11 +3,11 @@
 
     angular
         .module('MyApp')
-        .factory('PaisService', PaisService);
+        .factory('DenunciaService', DenunciaService);
 
-        PaisService.$inject = ['$http', '$window', '$rootScope'];
+        DenunciaService.$inject = ['$http', '$window', '$rootScope'];
 
-    function PaisService($http, $window, $rootScope) {
+    function DenunciaService($http, $window, $rootScope) {
         var service = {
             find: find,
             findById: findById,
@@ -15,7 +15,7 @@
             remove: remove
         };
 
-        var URL = 'http://localhost:8080/api/pais';
+        var URL = 'http://localhost:8080/api/denuncia';
 
         return service;
 

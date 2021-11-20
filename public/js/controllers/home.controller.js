@@ -12,6 +12,7 @@
         vm.cidadesPage = cidadesPage;
         vm.estadosPage = estadosPage;
         vm.paisesPage = paisesPage;
+        vm.denunciaPage = denunciaPage;
 
         activate();
 
@@ -29,5 +30,9 @@
         function paisesPage() {
             $location.path("/pais");
         }
+        function denunciaPage() {
+            $location.path("/denuncia");
+        }
+        
     }
 })();

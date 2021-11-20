@@ -37,6 +37,15 @@ angular
             .when("/pais/new", {
                 templateUrl: "partials/pais-form.html",
             })
+            .when("/denuncia", {
+                templateUrl: "partials/denuncia.html",
+            })
+            .when("/denuncia/:id", {
+                templateUrl: "partials/denuncia-form.html",
+            })
+            .when("/denuncia/new", {
+                templateUrl: "partials/denuncia-form.html",
+            })
             .otherwise({
                 templateUrl: "partials/404.html",
             });
