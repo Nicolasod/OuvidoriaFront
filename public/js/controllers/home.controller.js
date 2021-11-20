@@ -34,5 +34,9 @@
             $location.path("/denuncia");
         }
         
+        function reclamacoesPage() {
+            $location.path("/reclamacao");
+        }
+        
     }
 })();
