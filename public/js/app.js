@@ -56,7 +56,7 @@ angular
             })
             .when("/reclamacao/:id", {
                 templateUrl: "partials/denuncia-form.html",
-            })
+            })//at
             .when("reclamacao/new", {
                 templateUrl: "partials/denuncia-form.html",
             })
