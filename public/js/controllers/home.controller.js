@@ -15,6 +15,8 @@
         vm.reclamacaoPage = reclamacaoPage;
         vm.denunciaPage = denunciaPage;
         vm.elogioPage = elogioPage;
+        vm.sugestaoPage = sugestaoPage;
+        vm.solicitacaoPage = solicitacaoPage;
         
         activate();
 
@@ -41,6 +43,12 @@
         }
         function elogioPage() {
             $location.path("/elogio");
+        }
+        function sugestaoPage() {
+            $location.path("/sugestao");
+        }
+        function solicitacaoPage() {
+            $location.path("/solicitacao");
         }
         
     }
