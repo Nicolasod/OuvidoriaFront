@@ -12,8 +12,9 @@
         vm.cidadesPage = cidadesPage;
         vm.estadosPage = estadosPage;
         vm.paisesPage = paisesPage;
+        vm.reclamacaoPage = reclamacaoPage;
         vm.denunciaPage = denunciaPage;
-
+        
         activate();
 
         function activate() {
@@ -34,7 +35,7 @@
             $location.path("/denuncia");
         }
         
-        function reclamacoesPage() {
+        function reclamacaoPage() {
             $location.path("/reclamacao");
         }
         
