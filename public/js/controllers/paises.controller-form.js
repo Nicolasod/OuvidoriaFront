@@ -19,7 +19,7 @@
     ) {
         var vm = this;
         vm.pais = {};
-        vm.titulo = "Nova Pais";
+        vm.titulo = "Novo Pais";
         vm.item = null;
         vm.salvar = salvar;
         vm.select = select;

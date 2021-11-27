@@ -3,23 +3,23 @@
 
     angular
         .module("MyApp")
-        .controller("DenunciaFormController", DenunciaFormController);
+        .controller("SugestaoFormController", SugestaoFormController);
 
     DenunciaFormController.$inject = [
-        "DenunciaService",
+        "SugestaoService",
         "$location",
         "$routeParams",
         "$scope",
     ];
 
-    function DenunciaFormController(
-        DenunciaService,
+    function SugestaoFormController(
+        SugestaoService,
         $location,
         $routeParams
     ) {
         var vm = this;
-        vm.denuncia = {};
-        vm.titulo = "Nova Denúncia";
+        vm.sugestao = {};
+        vm.titulo = "Nova Sugestão";
         vm.item = null;
         vm.salvar = salvar;
         vm.select = select;
@@ -28,17 +28,17 @@
 
         function activate() {
             if ($routeParams.id) {
-                DenunciaService.findById($routeParams.id).success(function (data) {
-                    vm.denuncia = data;
-                    vm.titulo = "Editando Denuncia";
+                SugestaoService.findById($routeParams.id).success(function (data) {
+                    vm.sugestao = data;
+                    vm.titulo = "Editando Sugestão";
                 });
             }
         }
 
         function salvar() {
-            DenunciaService.save(vm.denuncia).success(function () {
-                $location.path("/denuncia");
-                alert("Denuncia cadastrada com sucesso!!");
+            SugestaoService.save(vm.sugestao).success(function () {
+                $location.path("/sugestao");
+                alert("Sugestão cadastrada com sucesso!!");
             }).error(function (erro) {
                 alert(JSON.stringify(erro));
             });
