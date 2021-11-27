@@ -60,6 +60,15 @@ angular
             .when("reclamacao/new", {
                 templateUrl: "partials/denuncia-form.html",
             })
+            .when("/elogio", {
+                templateUrl: "partials/elogio.html",
+            })
+            .when("/elogio/:id", {
+                templateUrl: "partials/elogio-form.html",
+            })
+            .when("/elogio/new", {
+                templateUrl: "partials/elogio-form.html",
+            })
             .otherwise({
                 templateUrl: "partials/404.html",
             });
