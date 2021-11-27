@@ -19,7 +19,7 @@
     ) {
         var vm = this;
         vm.solicitacao = {};
-        vm.titulo = "Nova Solicitacao";
+        vm.titulo = "Nova Solicitação";
         vm.item = null;
         vm.salvar = salvar;
         vm.select = select;
@@ -38,7 +38,7 @@
         function salvar() {
             SolicitacaoService.save(vm.solicitacao).success(function () {
                 $location.path("/solicitacao");
-                alert("Solicitacão cadastrada com sucesso!!");
+                alert("Solicitação cadastrada com sucesso!!");
             }).error(function (erro) {
                 alert(JSON.stringify(erro));
             });

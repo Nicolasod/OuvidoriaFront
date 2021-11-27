@@ -78,6 +78,15 @@ angular
             .when("/sugestao/new", {
                 templateUrl: "partials/sugestao-form.html",
             })
+            .when("/solicitacao", {
+                templateUrl: "partials/solicitacao.html",
+            })
+            .when("/solicitacao/:id", {
+                templateUrl: "partials/solicitacao-form.html",
+            })
+            .when("/solicitacao/new", {
+                templateUrl: "partials/solicitacao-form.html",
+            })
             .otherwise({
                 templateUrl: "partials/404.html",
             });

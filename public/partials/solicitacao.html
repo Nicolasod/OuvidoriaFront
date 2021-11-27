@@ -1,4 +1,4 @@
-<div ng-controller="SugestaoListController as vm">
+<div ng-controller="SolicitacaoListController as vm">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
@@ -6,10 +6,10 @@
                     <div class="panel-body">
                         <div class="row">
                             <div class="col-sm-8">
-                                <h3>Cadastro de Sugestões</h3>
+                                <h3>Cadastro de Solicitações</h3>
                             </div>
                             <div class="col-sm-4">
-                                <a class="btn btn-default pull-right btn-lg" href="sugestao/new">
+                                <a class="btn btn-default pull-right btn-lg" href="solicitacao/new">
                                     <i class="fa fa-plus-square-o" aria-hidden="true"></i>
                                     <span>Nova Sugestão</span>
                                 </a>
@@ -32,12 +32,12 @@
                                     <td>{{item.usuario}}</td>
                                     <td>{{item.assunto}}</td>
                                     <td>
-                                        <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/sugestao/' + item.id}}">
+                                        <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/solicitacao/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                         </a>
 
                                         <a type="button" class="btn btn-primary btn-sm" confirmed-click="vm.remover(item)" 
-                                        ng-confirm-click="Deseja excluir o sugestao?">
+                                        ng-confirm-click="Deseja excluir a solicitação?">
                                             <i class="fa fa-trash-o" aria-hidden="true"></i>
                                         </a>
                                     </td>
