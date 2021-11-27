@@ -69,6 +69,15 @@ angular
             .when("/elogio/new", {
                 templateUrl: "partials/elogio-form.html",
             })
+            .when("/sugestao", {
+                templateUrl: "partials/sugestao.html",
+            })
+            .when("/sugestao/:id", {
+                templateUrl: "partials/sugestao-form.html",
+            })
+            .when("/sugestao/new", {
+                templateUrl: "partials/sugestao-form.html",
+            })
             .otherwise({
                 templateUrl: "partials/404.html",
             });
