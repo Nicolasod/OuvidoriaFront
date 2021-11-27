@@ -46,11 +46,14 @@ angular
             .when("/denuncia/new", {
                 templateUrl: "partials/denuncia-form.html",
             })
-            .when("/reclamacao/:id", {
-                templateUrl: "partials/reclamacao-form.html",
+            .when("/reclamacao", {
+                templateUrl: "partials/denuncia.html",
             })
-            .when("/reclamacao/new", {
-                templateUrl: "partials/reclamacao-form.html",
+            .when("/reclamacao/:id", {
+                templateUrl: "partials/denuncia-form.html",
+            })
+            .when("reclamacao/new", {
+                templateUrl: "partials/denuncia-form.html",
             })
             .otherwise({
                 templateUrl: "partials/404.html",
