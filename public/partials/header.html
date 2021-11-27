@@ -7,11 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-            <a href="" ng-click="navigate()" class="navbar-brand" style="padding-top: 10px; font-size: 30px;">Projeto de Ouvidoria {{isAdministrador}}</a>
+            <a href="" ng-click="navigate()" class="navbar-brand" style="padding-top: 15px; font-size: 30px;">Projeto de Ouvidoria {{isAdministrador}}</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav" ng-if="isAuthenticated()">
-                <li ng-class="{ active: isActive('/home')}" ng-if="isAdministrador()"><a href="/home">Menu Administrador</a></li>
+                <li ng-class="{ active: isActive('/home')}" ng-if="isAdministrador()"><a href="/home">Modo Anônimo</a></li>
                 <li ng-class="{ active: isActive('/home')}" ng-if="isAuthenticated()"><a href="/home">Home</a></li>
                  <li class="dropdown" ng-if="isAuthenticated()">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" 
