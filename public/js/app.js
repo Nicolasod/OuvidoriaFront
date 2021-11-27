@@ -52,13 +52,13 @@ angular
                 templateUrl: "partials/denuncia-form.html",
             })
             .when("/reclamacao", {
-                templateUrl: "partials/denuncia.html",
+                templateUrl: "partials/reclamacao.html",
             })
             .when("/reclamacao/:id", {
-                templateUrl: "partials/denuncia-form.html",
-            })//at
+                templateUrl: "partials/reclamacao-form.html",
+            })
             .when("reclamacao/new", {
-                templateUrl: "partials/denuncia-form.html",
+                templateUrl: "partials/reclamacao-form.html",
             })
             .when("/elogio", {
                 templateUrl: "partials/elogio.html",
