@@ -22,15 +22,17 @@
                         <table class="table" style="margin-top: 3em">
                             <thead>
                                 <tr>
-                                    <th>Setor Orgao</th>
-                                    <th>assunto</th>
-                                    <th>AÇÕES</th>
+                                    <th>Setor Órgão</th>
+                                    <th>Assunto</th>
+                                    <th>Descrição</th>
+                                    <th>Ações</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr ng-repeat="item in vm.itens">
-                                    <td>{{item.usuario}}</td>
-                                    <td>{{item.assunto}}</td>
+                                    <td>{{item.setorOrgao.departamento}}</td>
+                                    <td>{{item.assunto.descricaoAssunto}}</td>
+                                    <td>{{item.descricao}}</td>
                                     <td>
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/elogio/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>

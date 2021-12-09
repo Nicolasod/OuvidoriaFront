@@ -42,7 +42,13 @@
             $location.path("/reclamacao");
         }
         function elogioPage() {
-            $location.path("/elogio");
+            //$location.path("/elogio");
+
+            if (isAdministrador()){
+                $location.path("/elogio");
+            }else{
+                $location.path("/elogio/new");
+            }
         }
         function sugestaoPage() {
             $location.path("/sugestao");
@@ -50,6 +56,11 @@
         function solicitacaoPage() {
             $location.path("/solicitacao");
         }
+
+        //Adicionado para verificar se é administrador ou não
+        function isAdministrador() {
+            return $window.localStorage.administrador;
+        };
         
     }
 })();
