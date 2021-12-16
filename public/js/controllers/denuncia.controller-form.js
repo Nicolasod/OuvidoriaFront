@@ -37,7 +37,7 @@
 
         function salvar() {
             DenunciaService.save(vm.denuncia).success(function () {
-                $location.path("/denuncia");
+                $location.path("/home");
                 alert("Denuncia cadastrada com sucesso!!");
             }).error(function (erro) {
                 alert(JSON.stringify(erro));
@@ -47,6 +47,11 @@
     function select(valor){
         return '"'+valor+'"';
     }
+
+    //Adicionado para verificar se é administrador ou não
+    function isAdministrador() {
+        return $window.localStorage.administrador;
+    };
 
     }
 })();

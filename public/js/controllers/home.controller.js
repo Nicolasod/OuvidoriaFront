@@ -35,11 +35,21 @@
             $location.path("/pais");
         }
         function denunciaPage() {
-            $location.path("/denuncia");
+            //$location.path("/denuncia");
+            if (isAdministrador()){
+                $location.path("/denuncia");
+            }else{
+                $location.path("/denuncia/new");
+            }
         }
         
         function reclamacaoPage() {
-            $location.path("/reclamacao");
+            //$location.path("/reclamacao");
+            if (isAdministrador()){
+                $location.path("/reclamacao");
+            }else{
+                $location.path("/reclamacao/new");
+            }
         }
         function elogioPage() {
             //$location.path("/elogio");
@@ -51,10 +61,20 @@
             }
         }
         function sugestaoPage() {
-            $location.path("/sugestao");
+            //$location.path("/sugestao");
+            if (isAdministrador()){
+                $location.path("/sugestao");
+            }else{
+                $location.path("/sugestao/new");
+            }
         }
         function solicitacaoPage() {
-            $location.path("/solicitacao");
+            //$location.path("/solicitacao");
+            if (isAdministrador()){
+                $location.path("/solicitacao");
+            }else{
+                $location.path("/solicitacao/new");
+            }
         }
 
         //Adicionado para verificar se é administrador ou não

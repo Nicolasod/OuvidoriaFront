@@ -37,7 +37,7 @@
 
         function salvar() {
             ReclamacaoService.save(vm.reclamacao).success(function () {
-                $location.path("/reclamacao");
+                $location.path("/home");
                 alert("Reclamação cadastrada com sucesso!!");
             }).error(function (erro) {
                 alert(JSON.stringify(erro));

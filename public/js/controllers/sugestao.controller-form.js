@@ -37,7 +37,7 @@
 
         function salvar() {
             SugestaoService.save(vm.sugestao).success(function () {
-                $location.path("/sugestao");
+                $location.path("/home");
                 alert("Sugestão cadastrada com sucesso!!");
             }).error(function (erro) {
                 alert(JSON.stringify(erro));

@@ -37,7 +37,7 @@
 
         function salvar() {
             SolicitacaoService.save(vm.solicitacao).success(function () {
-                $location.path("/solicitacao");
+                $location.path("/home");
                 alert("Solicitação cadastrada com sucesso!!");
             }).error(function (erro) {
                 alert(JSON.stringify(erro));

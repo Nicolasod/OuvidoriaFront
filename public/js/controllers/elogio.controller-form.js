@@ -37,7 +37,7 @@
 
         function salvar() {
             ElogioService.save(vm.elogio).success(function () {
-                $location.path("/elogio");
+                $location.path("/home");
                 alert("Elogio cadastrada com sucesso!!");
             }).error(function (erro) {
                 alert(JSON.stringify(erro));
