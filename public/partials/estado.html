@@ -32,10 +32,11 @@
                                     <td>{{item.nome}}</td>
                                     <td>{{item.populacao}}</td>
                                     <td>
+                                        <!--
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/estado/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                         </a>
-
+                                        -->
                                         <a type="button" class="btn btn-primary btn-sm" confirmed-click="vm.remover(item)" 
                                         ng-confirm-click="Deseja excluir o estado?">
                                             <i class="fa fa-trash-o" aria-hidden="true"></i>

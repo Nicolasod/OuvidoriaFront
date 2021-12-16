@@ -34,10 +34,11 @@
                                     <td>{{item.assunto.descricaoAssunto}}</td>
                                     <td>{{item.descricao}}</td>
                                     <td>
+                                        <!--
                                         <a type="button" class="btn btn-primary btn-sm" ng-href="{{'/denuncia/' + item.id}}">
                                             <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
                                         </a>
-
+                                        -->
                                         <a type="button" class="btn btn-primary btn-sm" confirmed-click="vm.remover(item)" 
                                         ng-confirm-click="Deseja excluir o denuncia?">
                                             <i class="fa fa-trash-o" aria-hidden="true"></i>
